@@ -1,0 +1,84 @@
+.App {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('/public/image-weather.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: lightblue;
+  padding: 1.5em;
+  border-radius: 0.7em;
+  max-width: 400px;
+}
+
+.card_title {
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.card_subtitle {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+.card_body {
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.card_info_title {
+  text-align: center;
+  margin-bottom: 0.8em;
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.card_ifo_body {
+  display: grid;
+  gap: 0.5em;
+}
+
+.card_info_item {
+  font-size: 0.8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-weight: 600;
+}
+
+.card_info_label {
+  font-weight: 300;
+}
+
+.card_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card_temperature {
+  margin-bottom: 0.7em;
+}
+
+.card_btn {
+  font-size: 0.8rem;
+  padding: 0.7em 1.5em;
+  border-radius: 0.3em;
+  box-shadow: 0.2em 0.2em 0.7em black;
+  transition: filter 100ms ease, transform 100ms ease;
+  cursor: pointer;
+}
+
+.card_btn:hover {
+  filter: brightness(1);
+  transform: scale(1.05);
+}
